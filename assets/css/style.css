@@ -219,7 +219,7 @@ hr.white { border-color: #F3AE9B; }
 
 .nav-tabs-default { border: 1px solid #ddd; }
 .nav-tabs-default .nav-tabs { border-bottom: none; }
-.nav-tabs-default .nav-tabs li  { text-align: center; }
+.nav-tabs-default .nav-tabs li  { text-align: center; width: 16.66%; }
 .nav-tabs-default .nav-tabs li a,
 .nav-tabs-default .nav-tabs li a:Hover,
 .nav-tabs-default .nav-tabs.nav-justified > .active>a,
@@ -715,3 +715,4 @@ font-size: 18px;
   #hero .hero-big { font-size: 130px; }
   .navigation-bar-header .navigation-bar > li a { padding-left: 5px; padding-right: 5px; font-size: 16px; }
 }
+
