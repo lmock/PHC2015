@@ -585,6 +585,9 @@ font-size: 18px;
 
 /* Small Screens AND Tablets */
 @media (max-width: 991px) {
+  #canvas-map {
+    background-position-x: -800px;
+  }
   .nav-tabs > li {
     float: none;
     width: 100%;
