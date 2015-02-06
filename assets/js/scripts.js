@@ -97,75 +97,8 @@
         stuckClass: 'sticky'
     });
 
-    $('.fancybox').fancybox();
-
     });
 
-    // ****** GOOGLE MAP *******
-    var map;
-    var berk = new google.maps.LatLng(37.87403, -122.25997);
 
-    var MY_MAPTYPE_ID = 'custom_style';
-
-    function initialize() {
-
-        var featureOpts = [
-            {
-                stylers: [
-                    { saturation: -20 },
-                    { lightness: 40 },
-                    { visibility: 'simplified' },
-                    { gamma: 0.8 },
-                    { weight: 0.4 }
-                ]
-            },
-            {
-                elementType: 'labels',
-                stylers: [
-                    { visibility: 'on' }
-                ]
-            },
-            {
-                featureType: 'water',
-                stylers: [
-                    { color: '#dee8ff' }
-                ]
-            }
-        ];
-
-        var mapOptions = {
-            zoom: 14,
-            scrollwheel: false,
-            panControl: false,
-            mapTypeControl: false,
-            streetViewControl: false,
-            center: new google.maps.LatLng(37.8602, -122.2780),
-            mapTypeControlOptions: {
-                mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-            },
-            mapTypeId: MY_MAPTYPE_ID
-        };
-
-        map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
-        var image = 'assets/img/pmarker.png';
-        //var myLatLng = new google.maps.LatLng(37.8680, -122.2690);
-        var myLatLng = new google.maps.LatLng(37.87403, -122.25997);
-        var beachMarker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            icon: image
-        });
-        var styledMapOptions = {
-            name: 'Custom Style'
-        };
-
-        var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-
-        map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-    }
-
-
-
-    google.maps.event.addDomListener(window, 'load', initialize);
 
 })();
