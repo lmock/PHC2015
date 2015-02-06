@@ -846,8 +846,9 @@ label.error {
 #schedule .panel .panel-title a {
   font-size: 27px;
   display: block;
+  font-weight: 300;
   padding: 10px 0px 5px 0px;
-  color: #fe4918;
+  color: #F04010;
 }
 #schedule .panel .panel-title a:Hover {
   text-decoration: none;
@@ -867,7 +868,8 @@ label.error {
   padding-top: 10px;
 }
 #schedule .author {
-  font-size: 11pt;
+  font-size: 14pt;
+  font-weight: 300;
 }
 #schedule .time {
   margin-bottom: -10px;
@@ -1176,9 +1178,6 @@ label.error {
     position: relative;
     top: 0px;
   }
-  #hero .btn-3d {
-    margin: 0px 0px 15px 0px;
-  }
   #hero .hero-big {
     font-size: 80px;
     text-transform: uppercase;
@@ -1218,9 +1217,6 @@ label.error {
   .nav-tabs-simple .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
-  }
-  #about .col-md-5 img {
-    margin: 0 auto;
   }
   #stat .counter {
     padding-top: 30px;
@@ -1315,8 +1311,4 @@ label.error {
     float: none;
     width: 100%;
   }
-  .nav-tabs-default .nav-tabs li {
-    width: 100%;
-  }
-
 }
