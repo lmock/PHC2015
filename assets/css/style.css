@@ -1,19 +1,4 @@
-/*
-*
-*   Ventcamp v1.0 custom styles
-*
-*   http://themeforest.net/user/Vivaco
-*
-*
-*   Orange - #fe4918
-*   Blue - #2da9ff
-*   Green - #57c2be
-*   Pink - #fe4918
-*   Berry - #ff8208
-*
-*/
-
-body,
+*, body,
 li.featured a {
   font-family: 'Raleway', 'Heletica Neue-Light', Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -66,6 +51,7 @@ h8,.h8 {
   font-size: 22px;
 }
 h1,h2,h3,h4,h5,h6,h7,h8,.h7,.h8 {
+  font-weight: 200;
   display: block;
 }
 
@@ -1122,9 +1108,6 @@ label.error {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  #hero .btn-3d {
-    margin: 0px 0px 15px 0px;
-  }
   #hero .hero-small span {
     margin: 0 !important;
   }
@@ -1146,9 +1129,6 @@ label.error {
   }
   .navigation-social li {
     padding-top: 40px;
-  }
-  .pricing-col {
-    width: 100% !important;
   }
   .nav-tabs-simple .nav-tabs li a {
     font-size: 20px;
@@ -1177,14 +1157,12 @@ label.error {
   .location {
     background: #F1F0F0;
   }
-
 }
 
 @media (max-width: 1500px) {
   #canvas-map: {
-    background-position-x: -300px;
+    background-position-x: -600px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -1326,7 +1304,6 @@ label.error {
     padding-right: 5px;
     font-size: 16px;
   }
-
 }
 
 /* Small Screens AND Tablets */
