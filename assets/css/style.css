@@ -412,21 +412,14 @@ label.error { display: block; }
 #sponsors .sub-title {font-size: 28px;}
 #sponsors img{ width: 100%; max-width: 160px; padding: 10px 15px 10px 15px; }
 
-#location-gmap { width:100%; height:650px; }
-#location-gmap img { max-width:none; }
-#location-gmap label { width: auto; display: inline; }
+
+#paddy { padding-top: 60px;}
 #map {position: relative; /*padding:172px 0px; */}
 .location {background:#fff; padding:20px 25px; z-index: 1;}
 .location ul {list-style:none; padding-left:10px;}
 .location li {margin:25px 0px; font-size: 15pt;}
 .location li  i{padding-right:15px; font-size: 15pt;}
-#canvas-map { background: url('../img/google-maps.png'); background-position-y: -300px; position: absolute; height:620px; width:100%; top: 0;right: 0;bottom: 0;left: 0; z-index: 1; }
-
-#paddy { padding-top: 60px;}
-#footer { padding: 0; }
-#footer .navigation-bar > li a { color: #536371; }
-#footer .navigation-bar > li a:Hover,
-#footer .navigation-bar > li a.active { color: #fe4918; text-decoration: none; }
+#canvas-map { background: url('../img/google-maps.png'); position: absolute; height:620px; width:100%; top: 0;right: 0;bottom: 0;left: 0; z-index: 1; }
 
 @-moz-document url-prefix() {
   .nav-tabs-simple .nav-tabs li.active:after,
@@ -512,13 +505,9 @@ font-size: 18px;
   .location {background: #F1F0F0;}
 }
 
-@media (max-width: 767px) {
-  .pricing-col { width: 100% !important; }
-  .pricing-col-featured { top: 0; }
-  .navigation-bar li a, .navigation-txt { text-transform: uppercase; }
-}
 
 @media (max-width: 767px) {
+  .navigation-bar li a, .navigation-txt { text-transform: uppercase; }
   #hero .hero-small span {
   font-size: 25px;
   display: inline-block;
@@ -545,24 +534,10 @@ font-size: 18px;
   .nav-tabs-simple .nav-tabs.nav-justified > li { display: table-cell; width: 1%; }
   #about .col-md-5 img { margin: 0 auto; }
   #stat .counter { padding-top: 30px; }
-  #canvas-map { display:none; }
+  #canvas-map { display:none; background-position-x: -1000px;}
   #map {padding:0;}
   .location {background: #F1F0F0;}
-  .thumb-wrapper { width: 100%; margin-bottom: 30px; }
-  .thumb-wrapper img { max-width: 100%; }
 
-  #footer .navigation-bar > li { padding-top: 0; padding-bottom: 0; }
-  #footer .navigation-bar > li a { padding-left: 10px; padding-right: 10px; font-size: 16px; }
-  #footer .navigation-bar-right {
-  float: none;
-  text-align: center;
-  display: block;
-  clear: both; }
-  #footer .navigation-bar-left {
-    float: none;
-    text-align: center;
-    display: block;
-  }
 
   #mobileheader { position: fixed; width: 100%; display: block; z-index: 999; background: rgba(37, 37, 37, .9)}
   #mobileheader .navigation-txt { position: absolute; width: 100%; text-align: center; font-size: 18px; line-height: 50px; cursor: pointer; }
