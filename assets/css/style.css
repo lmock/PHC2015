@@ -14,14 +14,12 @@
 */
 
 body,
-li.featured a { font-family: sans-serif; font-weight: 100; font-style: normal; }
+li.featured a {font-weight: 100; font-style: normal; }
 
 .btn,
 .hero-txt,
 .navigation,
-.nav-tabs li a { font-family: sans-serif; font-weight: 200; font-style: normal; }
-
-strong { font-family: sans-serif; font-weight: 400; font-style: normal; }
+.nav-tabs li a { font-weight: 200; font-style: normal; }
 
 /* Global & Helper */
 
