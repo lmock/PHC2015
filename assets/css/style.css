@@ -14,7 +14,7 @@
 */
 
 body,
-li.featured a {font-weight: 100; font-style: normal; }
+li.featured a {font-family:'Raleway', 'Heletica Neue-Light', Helvetica, Arial, sans-serif; font-weight: 100; font-style: normal; }
 
 .btn,
 .hero-txt,
