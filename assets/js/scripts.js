@@ -53,15 +53,14 @@
     $('#mobileheader').html($('#header').html());
 
     function heroInit() {
-        var hero        = jQuery('#hero'),
-            winHeight   = jQuery(window).height(),
-            heroHeight  = winHeight;
+        var hero        = $('#hero'),
+            winHeight   = $(window).height();
 
-            hero.css({height: heroHeight+"px"});
+            hero.css({height: Math.max(winHeight, 750) + "px"});
       };
 
-    jQuery(window).on("resize", heroInit);
-    jQuery(document).on("ready", heroInit);
+    $(window).on("resize", heroInit);
+    $(document).on("ready", heroInit);
 
     $('.navigation-bar').onePageNav({
         currentClass: 'active',
