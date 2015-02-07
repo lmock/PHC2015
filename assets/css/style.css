@@ -707,7 +707,6 @@ hr.white {
   text-decoration: underline;
 }
 
-
 .form .form-group {
   margin-bottom: 25px;
 }
@@ -826,7 +825,7 @@ label.error {
   padding-left: 0;
   padding-right: 0;
   padding-top: 10px; 
-  font-weight: 400;
+  font-weight: 500;
 
 }
 #schedule .author {
@@ -1057,13 +1056,17 @@ label.error {
 
 
 .marker {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.75;
   font-size: 18px;
 }
 
 /* Mobile device */
 @media (max-width: 480px) {
+  #stat .col-xs-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   #hero hr {
     width: 70%;
     display: block;
