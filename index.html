@@ -1155,24 +1155,7 @@
                                         </div>
                                         <span class="marker"><i class="fa fa-map-marker"></i>200 Wheeler Hall</span>
                                     </div>
-
-
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="DayOne-2">
-                                <article>
-                                    <p>No schedule yet.</p>
-                                </article>
-                            </div>
-                            <div class="tab-pane fade" id="DayOne-3">
-                                <article>
-                                    <p>No schedule yet.</p>
-                                </article>
-                            </div>
-                            <div class="tab-pane fade" id="DayOne-4">
-                                <article>
-                                    <p>No schedule yet.</p>
-                                </article>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -1347,19 +1330,18 @@
         <div class="overlay"></div>
         <div class="container">
             <article class="article-big animated hiding" data-animation="fadeInDown" data-delay="0">
-                <h5>Newsletter
-                    <span class="highlight">Signup</span>
-                </h5>
-                <p>No Spam - only
-                    <span class="highlight">latest news</span>, events, and activity updates!</p>
-                <form id="subscribe" class="form" action="" method="post">
-                    <div class="form-group form-inline">
-                        <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" />
-                        <input type="submit" class="btn btn-xs btn-default" value="Submit" />
-                        <span id="response">
-                        </span>
-                    </div>
-                </form>
+            <h5>Newsletter
+            <span class="highlight">Signup</span>
+            </h5>
+            <p>No Spam - only
+            <span class="highlight">latest news</span>, events, and activity updates!</p>
+            <div id="subscribe" class="form">
+            <div class="form-group form-inline">
+            <input type="email" class="form-control required" id="NewsletterEmail" name="NewsletterEmail" placeholder="your@email.com" />
+            <input type="submit" onclick="submitEmailForm()" class="btn btn-xs btn-default" value="Submit" />
+            <span id="response"></span>
+            </div>
+            </div>
             </article>
         </div>
     </section>
@@ -1444,6 +1426,21 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/waypoints-sticky.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script type="text/javascript">
+        function submitEmailForm() {
+            var email = $('#NewsletterEmail').val();
+            $.ajax({
+              url: "https://docs.google.com/a/berkeley.edu/forms/d/152En4bL9COTCJaUUUqWt_YXxpIXJFILbs1UcP1BxFp0/formResponse",
+              data: { "entry_1564545568": email },
+              type: "POST",
+              dataType: "xml",
+              success: $('NewsletterEmail').html('Thank You!')
+            });
+      }
+    </script>
+    
+    
+    </script> 
 </body>
 
 </html>
