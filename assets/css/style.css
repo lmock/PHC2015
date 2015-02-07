@@ -128,42 +128,6 @@ hr.white {
 .btn-lg {
   font-size: 28px;
 }
-.btn-3d {
-  background: #fe4918;
-  color: #fff;
-  border: 1px solid transparent;
-  border-bottom: 5px solid #BA3512;
-  border-radius: 4px;
-}
-.btn-3d .fa {
-  opacity: .4;
-  color: #333;
-  margin-right: 10px;
-}
-.btn-3d span {
-  position: relative;
-  top: -8px;
-}
-.btn-3d:Hover {
-  border: 1px solid #ddd;
-  background: #fff;
-  color: #fe4918 !important;
-  border-bottom: 5px solid #ddd;
-}
-.btn-3d:Hover .fa {
-  opacity: 1;
-  color: #fe4918;
-}
-
-.color .btn-3d {
-  color: #fe4918 !important;
-  background: #fff;
-  border-color: #ddd;
-}
-.color .btn-3d .fa {
-  color: #fe4918 !important;
-}
-
 .btn-primary {
   opacity: 1;
   background: #fe4918;
@@ -320,7 +284,7 @@ hr.white {
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 200px;
+  min-height: 750px;
   width: auto;
   position: relative;
   overflow: hidden;
@@ -1117,7 +1081,7 @@ label.error {
     top: 57%;
   }
   #hero .hero-big {
-    font-size: 50px !important;
+    font-size: 32pt !important;
     line-height: 70px;
     margin-top: 10px;
   }
