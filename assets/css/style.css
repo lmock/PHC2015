@@ -371,10 +371,6 @@ hr.white {
   width: 100%;
   z-index: 9;
 }
-.sticky-wrapper {
-  margin-top: 0px;
-  height: 90px;
-}
 
 .navigation {
   margin-left: -15px;
